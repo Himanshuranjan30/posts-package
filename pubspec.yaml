@@ -1,8 +1,8 @@
 name: posts
-description: A new Flutter package project.
+description: A post template for flutter.
 version: 0.0.1
-author:
-homepage:
+author: Himanshu Ranjan<himanshuranjan30@gmail.com>
+homepage: https://github.com/Himanshuranjan30/posts-package
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
