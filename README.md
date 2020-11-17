@@ -2,6 +2,11 @@
 
 A package to help you use Facebook and Linkedin like Posts template.
 
+# Screens
+
+![Screen 1](screenshots/post.jpeg)
+![Screen 2](screenshots/Screens.jpeg)
+
 ## Getting Started
 
 

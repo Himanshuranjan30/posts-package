@@ -33,6 +33,12 @@ class MyApp extends StatelessWidget {
 }
 
 class DashBoard extends StatelessWidget {
+  increment() {
+    var counter = 1;
+    counter = counter + 1;
+    print(counter);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,8 +46,11 @@ class DashBoard extends StatelessWidget {
       body: Post(
           200,
           200,
-          "https://miro.medium.com/max/1604/1*2qoOy2WfCdsCPRLwqBNUXw.png",
-          true),
+          "https://brookesnews.com/wp-content/uploads/2020/01/top-ski-resorts-world-united-states-colorado-aspen-snowmass.jpg",
+          true,
+          increment,
+          increment,
+          increment),
     );
   }
 }

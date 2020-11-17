@@ -7,13 +7,12 @@ class Post extends StatelessWidget {
   double width;
   String imageurl;
   bool isNetworkImage = false;
+  Function onLiketap;
+  Function onCommenttap;
+  Function onSharetap;
 
-  Post(
-    this.height,
-    this.width,
-    this.imageurl,
-    this.isNetworkImage,
-  );
+  Post(this.height, this.width, this.imageurl, this.isNetworkImage,
+      this.onLiketap, this.onCommenttap, this.onSharetap);
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +32,15 @@ class Post extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Icon(Icons.thumb_up),
-            Icon(Icons.comment),
-            Icon(Icons.share)
+            InkWell(child: Icon(Icons.thumb_up), onTap: onLiketap),
+            InkWell(
+              child: Icon(Icons.comment),
+              onTap: onCommenttap,
+            ),
+            InkWell(
+              child: Icon(Icons.share),
+              onTap: onSharetap,
+            )
           ],
         ),
         Divider(),
