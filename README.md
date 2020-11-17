@@ -27,3 +27,5 @@ Now in your Dart code, you can use:
 
 `import 'package:posts/posts.dart';`
 
+4. Use it.
+
